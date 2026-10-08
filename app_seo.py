@@ -27,7 +27,7 @@ if st.button("Generar Auditoría"):
         try:
             with st.spinner('Analizando variables e intención de búsqueda...'):
                 genai.configure(api_key=api_key)
-                modelo = genai.GenerativeModel('gemini-2.5-flash-lite')
+                modelo = genai.GenerativeModel('gemini-3.5-flash-lite')
                 
                 instrucciones = """
                 Eres el Auditor SEO Local para Chifa Baozi en Wanchaq, Cusco.
