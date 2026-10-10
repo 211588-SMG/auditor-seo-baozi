@@ -105,7 +105,7 @@ if st.button("✨ Generar Auditoría"):
             with st.spinner('Analizando variables e intención de búsqueda...'):
                 genai.configure(api_key=api_key)
                 # Forzar el modelo pro garantizado en tu servidor
-                modelo = genai.GenerativeModel('gemini-2.5-flash-lite')
+                modelo = genai.GenerativeModel('gemini-3.5-flash-lite')
                 
                 # Reglas estrictas en formato HTML o formato legible
                 instrucciones = f"""
